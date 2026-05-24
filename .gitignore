@@ -1,0 +1,23 @@
+# Старые/локальные папки и приватные файлы — не пушим
+Хак/
+ИНФ/
+Инструкция.md
+Гуппа.docx
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+*~
+
+# Логи и временные
+*.log
+*.tmp
+.cache/

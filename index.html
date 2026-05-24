@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хак ИИ — Отряд №5 · Школа бизнес-автоматизации · 39-й поток</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+
+    <!-- Лоадер -->
+    <div id="loader">
+        <div style="text-align:center">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Хак ИИ</div>
+        </div>
+    </div>
+
+    <!-- Кнопка наверх -->
+    <button id="backToTop" title="Наверх">↑</button>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <svg width="32" height="32" viewBox="0 0 36 36">
+                <rect x="2" y="2" width="32" height="32" rx="9" stroke="#00E5BF" stroke-width="2.5" fill="none"/>
+                <path d="M12 18L16 22L24 14" stroke="#00E5BF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Хак<span class="accent">ИИ</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#masscode">Mass Code</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#journey">Путь</a></li>
+            <li><a href="#anthem">Гимн</a></li>
+            <li><a href="#principles">Принципы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+    </nav>
+
+    <!-- HERO без маскота -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Группа №5 · 39-й поток
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Хак ИИ</span><br>
+                    Взлом рутины с&nbsp;помощью нейросетей
+                </h1>
+                <p class="hero-desc">
+                    Шесть человек, один маскот-черепашка и одна цель — превратить ручную работу в&nbsp;автоматизированные процессы. Школа бизнес-автоматизации, 39-й поток.
+                </p>
+                <div class="hero-actions">
+                    <a href="#masscode" class="btn btn-primary">
+                        Познакомиться
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Написать нам</a>
+                </div>
+                <div class="hero-meta">
+                    <div class="hero-meta-item">
+                        <span class="num">6</span>
+                        <span class="label">человек</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <span class="num">39</span>
+                        <span class="label">поток школы</span>
+                    </div>
+                    <div class="hero-meta-item">
+                        <span class="num">1</span>
+                        <span class="label">черепашка</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MASS CODE НАВЕРХУ -->
+    <section class="masscode-top" id="masscode">
+        <div class="container">
+            <div class="masscode-top-head reveal">
+                <div class="section-label">Финал · Mass Code</div>
+                <h2>Код, который мы написали <span class="gradient-text">все вместе</span></h2>
+                <p>Это наша гордость и точка сборки команды — объятие Черепашки-ниндзя, которое&nbsp;соединило отряд в&nbsp;единый организм.</p>
+            </div>
+            <div class="video-block reveal">
+                <video controls preload="metadata">
+                    <source src="media/masscode.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- КТО МЫ — видео + про нас + фотографии -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="section-label">Кто мы</div>
+                <h2 class="section-title">Кто мы и <span class="gradient-text">что мы</span></h2>
+                <p class="section-desc">Короткий ролик о том, кто мы и почему автоматизируем всё вокруг. А ниже&nbsp;— шесть человек, каждый со своей суперсилой.</p>
+            </div>
+
+            <!-- Видео-презентация со всеми -->
+            <div class="video-block reveal" style="margin-bottom: 80px;">
+                <video controls preload="metadata">
+                    <source src="media/about.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Команда -->
+            <div class="team-grid">
+                <div class="member reveal">
+                    <div class="member-photo"><img src="media/vladimir.png" alt="Владимир"></div>
+                    <div class="member-body">
+                        <div class="member-role">Лидер</div>
+                        <h3 class="member-name">Владимир</h3>
+                        <p class="member-desc">Вдохновляет и направляет группу. Песни на заказ. Держит курс на результат.</p>
+                        <a href="https://t.me/vh220" target="_blank" class="member-tg">@vh220</a>
+                    </div>
+                </div>
+                <div class="member reveal">
+                    <div class="member-photo"><img src="media/alina.png" alt="Алина"></div>
+                    <div class="member-body">
+                        <div class="member-role">Участник</div>
+                        <h3 class="member-name">Алина</h3>
+                        <p class="member-desc">Психолог и транзактный аналитик. Понимает людей лучше, чем они сами.</p>
+                        <a href="https://t.me/TA_Alina_psy" target="_blank" class="member-tg">@TA_Alina_psy</a>
+                    </div>
+                </div>
+                <div class="member reveal">
+                    <div class="member-photo"><img src="media/pavel.png" alt="Павел"></div>
+                    <div class="member-body">
+                        <div class="member-role">Участник</div>
+                        <h3 class="member-name">Павел</h3>
+                        <p class="member-desc">Маркетплейсы, товары для дома. Знает, что и&nbsp;кому продаётся.</p>
+                        <a href="https://t.me/paxavorob" target="_blank" class="member-tg">@paxavorob</a>
+                    </div>
+                </div>
+                <div class="member reveal">
+                    <div class="member-photo"><img src="media/roman.png" alt="Роман"></div>
+                    <div class="member-body">
+                        <div class="member-role">Сержант по ДЗ</div>
+                        <h3 class="member-name">Роман</h3>
+                        <p class="member-desc">Сертификация кораблей. Дисциплина и&nbsp;отчёты — его стихия.</p>
+                        <a href="https://t.me/renskov_roman" target="_blank" class="member-tg">@renskov_roman</a>
+                    </div>
+                </div>
+                <div class="member reveal">
+                    <div class="member-photo"><img src="media/svetlana.png" alt="Светлана"></div>
+                    <div class="member-body">
+                        <div class="member-role">Участник</div>
+                        <h3 class="member-name">Светлана</h3>
+                        <p class="member-desc">Мебель. Креатив и внедрение нейросетей — делает из идеи проект.</p>
+                        <a href="https://t.me/svetikandreeva" target="_blank" class="member-tg">@svetikandreeva</a>
+                    </div>
+                </div>
+                <div class="member reveal">
+                    <div class="member-photo"><img src="media/ulyana.png" alt="Ульяна"></div>
+                    <div class="member-body">
+                        <div class="member-role">Куратор</div>
+                        <h3 class="member-name">Ульяна</h3>
+                        <p class="member-desc">Куратор группы. Дизайн, «Кв Дорого». Держит весь процесс на плечах.</p>
+                        <a href="https://t.me/Uli_Alaska" target="_blank" class="member-tg">@Uli_Alaska</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПУТЬ — 20 событий из чата -->
+    <section class="section" id="journey">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="section-label">Хроника</div>
+                <h2 class="section-title">Как мы <span class="gradient-text">дошли до жизни такой</span></h2>
+                <p class="section-desc">20 моментов из жизни отряда — между штрафами, нейросетями и&nbsp;«редкосным говном, но&nbsp;прикольно».</p>
+            </div>
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">01</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Старт</div>
+                        <h3>Первое собрание · 29.04</h3>
+                        <p>Девять человек, ноль понимания зачем мы здесь. Распределяем роли: Роман — Сержант по ДЗ, Артём — Карма Менеджмент, Владимир — Лидер. Названия группы пока нет.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">02</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Первый вопрос</div>
+                        <h3>«Куда скидывать отчёты?»</h3>
+                        <p>Владимир задал самый важный вопрос вечера. Светлана 4 раза подряд написала «наверно сюда», «скидывать» — пока не появился пример отчёта на 7 пунктов.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">03</div>
+                    <div class="tl-card">
+                        <div class="tl-tag gold">Регламент</div>
+                        <h3>Шаблон отчёта на 7 пунктов</h3>
+                        <p>Планы · Сделано · Инсайты · Найденная рутина · Энергия от 1 до 10 · Шаг к Точке Б · Бизнес-карма. Всё. Каждый день. До 23:00. Без вариантов.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">04</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Опоздавшая</div>
+                        <h3>Алина включается на лету</h3>
+                        <p>В 21:54 первого дня: «Всем привет! Расскажите, пожалуйста, что сегодня было?) И какое дз? Чтобы могла включиться в процесс быстренько)»</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">05</div>
+                    <div class="tl-card">
+                        <div class="tl-tag green">Прорыв</div>
+                        <h3>Освоение нейросетей</h3>
+                        <p>Зарегистрировались в Gemini, Claude, Groq. Светлана пишет: «ИИ не думает». Роман пишет: «ИИ может усилить специалиста». Истина где-то рядом.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">06</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Инсайт дня</div>
+                        <h3>«Всё, что не нравится делать — оптимизируем»</h3>
+                        <p>Вероника сформулировала кредо отряда в&nbsp;первом отчёте. Стало девизом на пыли годы вперёд.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">07</div>
+                    <div class="tl-card">
+                        <div class="tl-tag gold">Дисциплина</div>
+                        <h3>«Осталось 8 минут!!!!»</h3>
+                        <p>Артём 30.04 в 22:51 — напоминание двум должникам. С четырьмя восклицательными. Никто не успел. Штрафы пошли.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">08</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Беспокойство куратора</div>
+                        <h3>Ульяна: «Чё-то хиленько у нас идёт»</h3>
+                        <p>21:14, второй день. Куратор включает режим тревоги. «Тянем до последнего?» — следом. Никто не отвечает. Все тянут.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">09</div>
+                    <div class="tl-card">
+                        <div class="tl-tag green">Первая болезнь</div>
+                        <h3>Алина заболела</h3>
+                        <p>«Спала весь день. Болеть очень грустно и непродуктивно». Состояние 2/10. Книгу всё-таки начала читать — хорошо.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">10</div>
+                    <div class="tl-card">
+                        <div class="tl-tag gold">Легенда</div>
+                        <h3>«Редкосное говно, но прикольно»</h3>
+                        <p>Василий с подругой создали песню в ИИ. Описал результат двумя словами. Эти два слова стали гимном отряда. 🤣😂</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">11</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Штраф</div>
+                        <h3>Василий проспал отчёт</h3>
+                        <p>«Я проспал 😁 За последние два дня, спал 6 часов. Добрался до кровати и всё. Ни одна нейронка не спасла 😅🤣😂»</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">12</div>
+                    <div class="tl-card">
+                        <div class="tl-tag green">Идея века</div>
+                        <h3>«Сон отнимает слишком много времени»</h3>
+                        <p>Василий после фильма «Аэлита»: «вот-бы этот процесс убрать». Артём: «Да, умела бы она ещё спать за меня 😂». Заявка в OpenAI отправлена.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">13</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Конфликт классов</div>
+                        <h3>«Галочки только для богатых»</h3>
+                        <p>Чтобы отмечать сдачу отчётов нужен Telegram Premium. Ни у Артёма, ни у Василия его нет. Ульяна: «ого не знала, что галочки только для богатых 😂».</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">14</div>
+                    <div class="tl-card">
+                        <div class="tl-tag gold">Лайфхак</div>
+                        <h3>«Ставим 🔥 так веселее»</h3>
+                        <p>Василий предложил вместо галочек ставить огонь. Отряд принял единогласно. Премиум больше не нужен.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">15</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Чистка рядов</div>
+                        <h3>Прощай, Денис</h3>
+                        <p>Молчал два дня, штраф 2 тыс. «А Дениса вроде в группе нет, я не нашёл его по нику». «Ну тогда видимо удаляем его». Удалили.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">16</div>
+                    <div class="tl-card">
+                        <div class="tl-tag green">Нейминг</div>
+                        <h3>Голосование за название</h3>
+                        <p>В ринг вышли: НейроКорп, AI-болит («для тех, кто лечит бизнес-процессы»), AI-вангард («стражники ИИ»). Ульяна объявила: «у меня открылась чакра придумывания»).</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot victory">17</div>
+                    <div class="tl-card">
+                        <div class="tl-tag green">Рождение бренда</div>
+                        <h3>ХакИИ — просто и стильно</h3>
+                        <p>Ульяна закрыла голосовалку одним сообщением: «Хакии — просто и стильно, и по делу. ХакИИ — можно так». Так и осталось.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">18</div>
+                    <div class="tl-card">
+                        <div class="tl-tag blue">Бизнес-карма</div>
+                        <h3>Помогаем друг другу</h3>
+                        <p>Владимир: «Помогу с регой в Клоде». Кто-то поделится «годным ВиНиПуХом за не дорого». Кто-то подскажет инструмент для MVP. Карма работает.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">19</div>
+                    <div class="tl-card">
+                        <div class="tl-tag gold">Самоирония</div>
+                        <h3>«Работа ради работы — это утопия»</h3>
+                        <p>Артём в инсайтах дня. Завершал месяц на работе, никому не помог, состояние 7/10. Точка Б — пока не сделана. Но мысль — золотая.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot victory">20</div>
+                    <div class="tl-card">
+                        <div class="tl-tag green">Финал</div>
+                        <h3>Mass Code</h3>
+                        <p>Код, который мы написали все вместе. То самое объятие Черепашки-ниндзя, которое соединило отряд в единый организм. Вы его уже видели в самом начале.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ГИМН с юморной подачей -->
+    <section class="section" id="anthem">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="section-label">Гимн отряда · 18+ в плане качества</div>
+                <h2 class="section-title">Песня, рождённая <span class="gradient-text">нейросетью</span></h2>
+                <p class="section-desc">
+                    Василий описал результат словами «редкосное говно, но прикольно». 🤣 С тех пор это — официальный гимн ХакИИ. Слушайте на свой страх и риск.
+                </p>
+            </div>
+            <div class="anthem-wrap reveal">
+                <p class="anthem-text">
+                    Здесь каждый шаг — это наш успех,<br>
+                    Мы вместе учимся, мы громче всех!<br>
+                    Знания — сила, мы идём вперёд,<br>
+                    Наша группа смелость найдёт!
+                </p>
+                <div class="anthem-player">
+                    <audio controls>
+                        <source src="media/anthem.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="anthem-caption">Хак ИИ · ИИ-композитор · 2026</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРИНЦИПЫ -->
+    <section class="section" id="principles">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="section-label">Кодекс</div>
+                <h2 class="section-title">Четыре <span class="gradient-text">принципа</span></h2>
+                <p class="section-desc">На чём держится отряд №5. Без этих правил мы&nbsp;были&nbsp;бы&nbsp;просто группой людей.</p>
+            </div>
+            <div class="principles reveal">
+                <div class="principle">
+                    <div class="principle-num">01</div>
+                    <h3>Автоматизация</h3>
+                    <p>Любую рутину — под капот нейросети. «Работай меньше — зарабатывай больше».</p>
+                </div>
+                <div class="principle">
+                    <div class="principle-num">02</div>
+                    <h3>Дисциплина</h3>
+                    <p>Отчёты каждый день до 23:00. Без вариантов. Без исключений. Опоздал — плати.</p>
+                </div>
+                <div class="principle">
+                    <div class="principle-num">03</div>
+                    <h3>Бизнес-карма</h3>
+                    <p>Помогаем другим — и возвращается. Взаимовыручка работает 24/7.</p>
+                </div>
+                <div class="principle">
+                    <div class="principle-num">04</div>
+                    <h3>Практика</h3>
+                    <p>Vibe coding, промпты, MVP — только дело, никакой пустой теории.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA + Контакты каждому -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-card reveal">
+                <h2>Хотите так же — <span class="gradient-text">автоматизировать</span> рутину?</h2>
+                <p>Черепашка-ниндзя передаёт привет. Напишите любому из&nbsp;отряда — расскажем, что у нас получается.</p>
+
+                <div class="contacts-grid">
+                    <div class="contact-row">
+                        <span class="contact-name">Владимир</span>
+                        <div class="contact-links">
+                            <a href="https://t.me/vh220" target="_blank" class="contact-btn tg">Telegram</a>
+                            <a href="#" target="_blank" class="contact-btn site">Сайт</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-name">Алина</span>
+                        <div class="contact-links">
+                            <a href="https://t.me/TA_Alina_psy" target="_blank" class="contact-btn tg">Telegram</a>
+                            <a href="#" target="_blank" class="contact-btn site">Сайт</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-name">Павел</span>
+                        <div class="contact-links">
+                            <a href="https://t.me/paxavorob" target="_blank" class="contact-btn tg">Telegram</a>
+                            <a href="#" target="_blank" class="contact-btn site">Сайт</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-name">Роман</span>
+                        <div class="contact-links">
+                            <a href="https://t.me/renskov_roman" target="_blank" class="contact-btn tg">Telegram</a>
+                            <a href="#" target="_blank" class="contact-btn site">Сайт</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-name">Светлана</span>
+                        <div class="contact-links">
+                            <a href="https://t.me/svetikandreeva" target="_blank" class="contact-btn tg">Telegram</a>
+                            <a href="#" target="_blank" class="contact-btn site">Сайт</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-name">Ульяна</span>
+                        <div class="contact-links">
+                            <a href="https://t.me/Uli_Alaska" target="_blank" class="contact-btn tg">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Хак<span class="accent">ИИ</span></div>
+            <p>Отряд №5 · Школа бизнес-автоматизации · 39-й поток</p>
+            <div class="footer-copy">© 2026 · Сделано с любовью к автоматизации и Черепашке-ниндзя</div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=5"></script>
+</body>
+</html>
