@@ -499,76 +499,6 @@ a { color: inherit; text-decoration: none; }
   margin: 0 12px;
 }
 
-/* ===== КОМАНДА ===== */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.member {
-  background: linear-gradient(180deg, rgba(22, 30, 58, 0.85), rgba(22, 30, 58, 0.6));
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-m);
-  transition: transform 0.4s, border-color 0.4s, box-shadow 0.4s;
-  position: relative;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-
-.member::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, 0.12), transparent 45%);
-  opacity: 0;
-  transition: opacity 0.4s;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.member:hover::after { opacity: 1; }
-
-.member::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--grad-primary);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s;
-  z-index: 3;
-}
-
-.member:hover {
-  transform: translateY(-6px);
-  border-color: var(--primary-edge);
-  box-shadow: var(--shadow-md);
-}
-
-.member:hover::before { transform: scaleX(1); }
-
-.member-photo {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  background: var(--bg-card-2);
-  border-radius: var(--radius-m);
-}
-
-.member-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  transition: transform 0.6s;
-}
-
-.member:hover .member-photo img { transform: scale(1.04); }
-
 /* ===== ТАЙМЛАЙН ===== */
 .timeline {
   position: relative;
@@ -1158,7 +1088,6 @@ a { color: inherit; text-decoration: none; }
   .burger.active span:nth-child(2) { opacity: 0; }
   .burger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-  .team-grid { grid-template-columns: repeat(2, 1fr); }
   .eco-grid { grid-template-columns: repeat(2, 1fr); }
   .principles { grid-template-columns: 1fr; }
   .section { padding: 100px 0; }
@@ -1172,7 +1101,6 @@ a { color: inherit; text-decoration: none; }
   .hero { padding: 130px 0 70px; min-height: auto; }
   .hero-meta { gap: 24px; padding-top: 28px; }
   .hero-meta-item .num { font-size: 1.6rem; }
-  .team-grid { grid-template-columns: 1fr; }
   .eco-grid { grid-template-columns: 1fr; }
   .eco-card { padding: 22px; }
   .timeline::before { left: 22px; }
@@ -1196,5 +1124,5 @@ a { color: inherit; text-decoration: none; }
   }
   .reveal { opacity: 1; transform: none; }
   .cursor-glow { display: none; }
-  .member, .eco-card, .principle { transform: none !important; }
+  .eco-card, .principle { transform: none !important; }
 }

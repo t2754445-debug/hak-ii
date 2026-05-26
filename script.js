@@ -99,14 +99,14 @@ if (navbar) {
   };
   requestAnimationFrame(tick);
 
-  const hoverTargets = 'a, button, .member, .eco-card, .principle, .tl-card, .anthem-player, video, audio';
+  const hoverTargets = 'a, button, .eco-card, .principle, .tl-card, .anthem-player, video, audio';
   document.querySelectorAll(hoverTargets).forEach((el) => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
   });
 
   // --- 3D tilt на карточках ---
-  const tiltCards = document.querySelectorAll('.member, .eco-card, .principle');
+  const tiltCards = document.querySelectorAll('.eco-card, .principle');
   const MAX_TILT = 8;
 
   tiltCards.forEach((card) => {
