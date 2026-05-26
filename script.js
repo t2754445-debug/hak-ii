@@ -4,6 +4,42 @@ window.addEventListener('load', () => {
   if (loader) setTimeout(() => loader.classList.add('hidden'), 500);
 });
 
+// ===== АВТОПЛЕЙ ГИМНА =====
+// Браузеры блокируют автоплей со звуком до первого взаимодействия,
+// поэтому: пробуем сразу, а если не получилось — запускаем после
+// первого клика/тапа/скролла. Пользователь всегда может нажать стоп
+// в стандартных контролах <audio>.
+(() => {
+  const anthem = document.getElementById('anthemAudio');
+  if (!anthem) return;
+
+  anthem.volume = 0.6;
+
+  let started = false;
+  const tryPlay = () => {
+    if (started) return;
+    const p = anthem.play();
+    if (p && typeof p.then === 'function') {
+      p.then(() => { started = true; })
+       .catch(() => { /* подождём первого взаимодействия */ });
+    } else {
+      started = true;
+    }
+  };
+
+  // Первая попытка — сразу после загрузки
+  if (document.readyState === 'complete') tryPlay();
+  else window.addEventListener('load', tryPlay, { once: true });
+
+  // Fallback: первое взаимодействие
+  const events = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+  const onInteract = () => {
+    tryPlay();
+    if (started) events.forEach(e => window.removeEventListener(e, onInteract));
+  };
+  events.forEach(e => window.addEventListener(e, onInteract, { passive: true }));
+})();
+
 // ===== БУРГЕР-МЕНЮ =====
 const burger = document.getElementById('burgerBtn');
 const navLinks = document.getElementById('navLinks');
